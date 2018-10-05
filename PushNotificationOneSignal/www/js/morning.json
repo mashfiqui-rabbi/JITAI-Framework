@@ -1,0 +1,720 @@
+[
+  {
+    "name":"QMood",
+    "text":"How are you feeling today? Please click on the spot that best represents your mood",
+    "type":"moodgrid"
+  },
+  {
+    "name":"QMood2",
+    "text":"How are you feeling today? Please click on the spot that best represents your mood",
+    "type":"moodgrid2"
+  },
+  {
+    "name":"Q1d",
+    "text":"This morning, overall I have felt…",
+    "type":"range",
+    "extra":{
+      "choices":["Lively", "extreme<br>ly",0,6,1]
+    }
+  },
+
+  {
+    "name":"Q2d",
+    "text":"This morning, overall I have felt…",
+    "type":"range",
+    "extra":{
+      "choices":["Sad", "extreme<br>ly",0,6,1]
+    }
+  },
+
+  {
+    "name":"Q3d",
+    "text":"This morning, overall I have felt…",
+    "type":"range",
+    "extra":{
+      "choices":["Depressed", "extreme<br>ly",0,6,1]
+    }
+  },
+
+  {
+    "name":"Q4d",
+    "text":"This morning, overall I have felt…",
+    "type":"range",
+    "extra":{
+      "choices":["Energetic", "extreme<br>ly",0,6,1]
+    }
+  },
+
+  {
+    "name":"Q5d",
+    "text":"This morning, overall I have felt…",
+    "type":"range",
+    "extra":{
+      "choices":["Happy", "extreme<br>ly",0,6,1]
+      }
+  },
+
+    {
+    "name":"Q6d",
+    "text":"This morning, overall I have felt…",
+    "type":"range",
+    "extra":{
+      "choices":["Nervous", "extreme<br>ly",0,6,1]
+    }
+  },
+
+  {
+    "name":"Q7d",
+    "text":"This morning, overall I have felt…",
+    "type":"range",
+    "extra":{
+      "choices":["Cheerful", "extreme<br>ly",0,6,1]
+    }
+  },
+
+  {
+    "name":"Q8d",
+    "text":"This morning, overall I have felt…",
+    "type":"range",
+    "extra":{
+      "choices":["Tense", "extreme<br>ly",0,6,1]
+    }
+  },
+
+  {
+    "name":"Q9d",
+    "text":"This morning, overall I have felt…",
+    "type":"range",
+    "extra":{
+      "choices":["Angry", "extreme<br>ly",0,6,1]
+    }
+  },
+
+  {
+    "name":"Q10d",
+    "text":"This morning, overall I have felt…",
+    "type":"range",
+    "extra":{
+      "choices":["Calm", "extreme<br>ly",0,6,1]
+    }
+  },  
+
+  {
+    "name":"Q11d",
+    "text":"This morning, overall I have felt…",
+    "type":"range",
+    "extra":{
+      "choices":["Hostile", "extreme<br>ly",0,6,1]
+    }
+  },
+
+  {
+    "name":"Q12d",
+    "text":"This morning, overall I have felt…",
+    "type":"range",
+    "extra":{
+      "choices":["Relaxed", "extreme<br>ly",0,6,1]
+    }
+  },
+
+  {
+    "name":"Q13d",
+    "text":"This morning, overall I have felt…",
+    "type":"range",
+    "extra":{
+      "choices":["Lonely", "extreme<br>ly",0,6,1]
+    }
+  },
+
+  {
+    "name":"Q14d",
+    "text":"This morning, has anything stressful occurred?",
+    "type":"radiobutton",
+    "extra":{
+      "choices":["Yes", "No"],
+      "orientation": "vertical"
+    }
+  },
+
+  {
+    "name":"Q15d",
+    "text": "How stressful was it?",
+    "type": "range",
+    "extra":{
+      "choices":["Not<br>at all", "Extreme<br>ly",0,6,1],
+      "dependency":{
+        "question": "Q14d",
+        "show": "Yes",
+        "hide": "No"
+      }
+    }
+  },
+
+  {
+    "name": "Q16d",
+    "text": "How recently did this happen?",
+    "type": "radiobutton",
+    "extra":{
+      "choices":["Within the last 30 minutes","30-60 minutes ago","More than 60 minutes ago"],
+      "orientation": "vertical",
+      "dependency":{
+        "question": "Q14d",
+        "show": "Yes",
+        "hide": "No"
+      }
+    }
+  },
+
+  {
+    "name":"Q17d",
+    "text": "How much did you feel that you could control the outcome of this event?",
+    "type": "range",
+    "extra":{
+      "choices":["Not<br>at all", "Very<br>Much",0,6,1],
+      "dependency":{
+        "question": "Q14d",
+        "show": "Yes",
+        "hide": "No"
+      }
+    }
+  },
+
+  {
+    "name":"Q18d",
+    "text":"In general, how stressed have you felt this morning?",
+    "type": "range",
+    "extra":{
+      "choices":["Not<br>at all", "Extreme<br>ly",0,6,1]
+    }
+  },
+
+  {
+    "name":"Q19d",
+    "text": "What time did you go to bed last night?",
+    "type": "timepicker",
+    "inputType": "time"
+  },
+
+  {
+    "name":"Q20d",
+    "text": "How long (in minutes) did it take you to fall asleep?",
+    "type": "textbox",
+    "inputType": "text"
+  },
+
+  {
+    "name":"Q21d",
+    "text": "What time did you wake up this morning?",
+    "type": "timepicker",
+    "inputType": "time"
+  },
+
+  {
+    "name":"Q22d",
+    "text": "How many hours did you sleep (last night)?",
+    "type": "textbox",
+    "inputType": "text"
+  },
+
+  {
+    "name":"Q23d",
+    "text":"Did you wake up in the middle of the night or early morning, before you meant to? (i.e., Early morning = prior to alarm or predetermined waking time)",
+    "type":"radiobutton",
+    "extra":{
+      "choices":["Yes", "No"],
+      "orientation": "vertical"
+    }
+  },
+
+  {
+    "name":"Q24d",
+    "text":"Overall, how would you rate last night's sleep quality?",
+    "type":"radiobutton",
+    "extra":{
+      "choices":["Very Poor", "Poor", "Fair", "Good", "Very Good"],
+      "orientation": "vertical"
+    }
+  },
+
+
+  {
+    "name":"Q25d",
+    "text":"This morning, have you had any interactions with another person (in person, by phone, online, text)?",
+    "type":"radiobutton",
+    "extra":{
+      "choices":["Yes", "No"],
+      "orientation": "vertical"
+    }
+  },
+
+  {
+    "name": "Q26d",
+    "text": "Who did you interact with?",
+    "type": "radiobutton",
+    "extra":{
+      "choices":["Boyfriend/Girlfriend/Partner","Friend(s)","Acquaintance(s)",
+        "Stranger(s)","Coworker(s)","Other"],
+      "orientation": "vertical",
+      "dependency":{
+        "question": "Q25d",
+        "show": "Yes"
+      }
+
+    }
+  },
+
+  {
+    "name":"Q27d",
+    "text":"Overall, how positive were these interactions? (Integer scale: 0=not at all, 6=extremely)",
+    "type":"range",
+    "extra":{
+      "choices":["Not<br>at all", "Extreme<br>ly",0,6,1],
+      "dependency":{
+        "question": "Q25d",
+        "show": "Yes"
+      }
+    }
+  },
+
+  {
+    "name":"Q28d",
+    "text":"Overall, how negative were these interactions? (Integer scale: 0=not at all, 6=extremely)",
+    "type":"range",
+    "extra":{
+      "choices":["Not<br>at all", "Extreme<br>ly",0,6,1],
+      "dependency":{
+        "question": "Q25d",
+        "show": "Yes"
+      }
+    }
+  },
+
+  {
+    "name":"Q29d",
+    "text":"The following questions will ask you about things that may have happened YESTERDAY/LAST NIGHT. Please answer each question as honestly as you can, and remember that all of your responses will be kept confidential.",
+    "type":"comment"
+  },
+
+  {
+    "name":"Q30d",
+    "text":"Please use the standard drink figure below to aid your response to the following questions.",
+    "type":"image",
+    "image_location":"img/drink_img.png"
+  },
+
+  {
+    "name": "Q31d",
+    "text": "How many drinks of alcohol did you drink yesterday/last night?",
+    "type": "autocomplete",
+    "extra": ["0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15+"]
+  },
+  {
+    "name":"Q32d",
+    "text": "Consider the drinks you had yesterday/last night. Please enter the TOTAL number of beer that you consumed yesterday/last night. If you did not drink a particular type of drink last night, please input a zero (0).",
+    "type": "textbox",
+    "inputType": "text",
+    "extra":{
+      "dependency":{
+        "question": "Q31d",
+        "hide": ["0"]
+      }
+    }
+  },
+  
+
+  {
+    "name":"Q33d",
+    "text": "Consider the drinks you had yesterday/last night. Please enter the TOTAL number of wine that you consumed yesterday/last night. If you did not drink a particular type of drink last night, please input a zero (0).",
+    "type": "textbox",
+    "inputType": "text",
+    "extra":{
+      "dependency":{
+        "question": "Q31d",
+        "hide": ["0"]
+      }
+    }
+  },
+
+  {
+    "name":"Q34d",
+    "text": "Consider the drinks you had yesterday/last night. Please enter the TOTAL number of Liquor (Not mixed) that you consumed yesterday/last night. If you did not drink a particular type of drink last night, please input a zero (0).",
+    "type": "textbox",
+    "inputType": "text",
+    "extra":{
+      "dependency":{
+        "question": "Q31d",
+        "hide": ["0"]
+      }
+    }
+  },
+
+  {
+    "name":"Q35d",
+    "text": "Consider the drinks you had yesterday/last night. Please enter the TOTAL number of Mixed drink (non-caffeinated) that you consumed yesterday/last night. If you did not drink a particular type of drink last night, please input a zero (0).",
+    "type": "textbox",
+    "inputType": "text",
+    "extra":{
+      "dependency":{
+        "question": "Q31d",
+        "hide": ["0"]
+      }
+    }
+  },
+
+  {
+    "name":"Q36d",
+    "text": "Consider the drinks you had yesterday/last night. Please enter the TOTAL number of Mixed drink (caffeinated regular soda mixed with alcohol) that you consumed yesterday/last night. If you did not drink a particular type of drink last night, please input a zero (0).",
+    "type": "textbox",
+    "inputType": "text",
+    "extra":{
+      "dependency":{
+        "question": "Q31d",
+        "hide": ["0"]
+      }
+    }
+  },
+
+   {
+    "name":"Q37d",
+    "text": "Consider the drinks you had yesterday/last night. Please enter the TOTAL number of Mixed drink (caffeinated diet soda mixed with alcohol) that you consumed yesterday/last night. If you did not drink a particular type of drink last night, please input a zero (0).",
+    "type": "textbox",
+    "inputType": "text",
+    "extra":{
+      "dependency":{
+        "question": "Q31d",
+        "hide": ["0"]
+      }
+    }
+  }, 
+  
+   {
+    "name":"Q38d",
+    "text": "Consider the drinks you had yesterday/last night. Please enter the TOTAL number of Mixed drink (caffeinated energy drink, e.g. Red Bull, mixed with alcohol) that you consumed yesterday/last night. If you did not drink a particular type of drink last night, please input a zero (0).",
+    "type": "textbox",
+    "inputType": "text",
+    "extra":{
+      "dependency":{
+        "question": "Q31d",
+        "hide": ["0"]
+      }
+    }
+  }, 
+
+  {
+    "name":"Q39d",
+    "text":"Did you pre-game yesterday/last night (i.e., drink prior to the main drinking event)?",
+    "type":"radiobutton",
+    "extra":{
+      "choices":["Yes", "No"],
+      "orientation": "vertical",
+      "dependency":{
+        "question": "Q31d",
+        "hide": ["0"]
+       }
+    }
+  },
+
+  {
+    "name":"Q40d",
+    "text":"Did you play drinking games yesterday/last night?",
+    "type":"radiobutton",
+    "extra":{
+      "choices":["Yes", "No"],
+      "orientation": "vertical",
+      "dependency":{
+        "question": "Q31d",
+        "hide": ["0"]
+       }
+    }
+  },  
+
+  {
+    "name": "Q41d",
+    "text": "As a result of drinking yesterday, did you …? (Check all that apply)",
+    "type": "checkbox",
+    "extra":{
+      "choices":["have a hangover","have a hangover","get in trouble with the police or Penn State Authorities for drinking",
+        "end up in bad physical shape the next day","find yourself in a situation where no one was sober enough to drive",
+        "do something sexually you wouldn’t have done if you hadn’t been drinking","have a sexual experience you wish you hadn’t",
+        "wake up in an unexpected place","blackout, or find yourself unable to remember large stretches of time from last night",
+        "throw up","feel sick to your stomach","get into a physical fight with someone",
+        "get into an argument with someone"],
+      "orientation": "vertical",
+      "dependency":{
+        "question": "Q31d",
+        "hide": ["0"]
+       }
+    }
+  },
+
+  {
+    "name": "Q42d",
+    "text": "As a result of drinking yesterday, did you …? (Check all that apply)",
+    "type": "checkbox",
+    "extra":{
+      "choices":["have more fun","feel closer to your friends","relieve tension",
+        "become more social","relax after a stressful situation",
+        "cope with daily life","seem more exciting to others",
+        "have a good sexual experience","look interesting to other people",
+        "none of these"],
+      "orientation": "vertical",
+      "dependency":{
+        "question": "Q31d",
+        "hide": ["0"]
+       }
+    }
+  },
+
+  {
+    "name":"Q43d",
+    "text":"Did something else happen as a result of drinking yesterday that was not mentioned?",
+    "type":"radiobutton",
+    "extra":{
+      "choices":["Yes", "No"],
+      "orientation": "vertical",
+      "dependency":{
+        "question": "Q31d",
+        "hide": ["0"]
+      }
+    }
+  },
+
+  {
+    "name":"Q44d",
+    "text": "Please describe what happened",
+    "type": "textbox",
+    "inputType": "text",
+    "extra":{
+      "dependency":{
+        "question": "Q43d",
+        "show": "Yes"
+      }
+    }
+  },
+
+  {
+    "name": "Q45d",
+    "text": "Yesterday, did you … ? (Check all that apply)",
+    "type": "checkbox",
+    "extra":{
+      "choices":["get in trouble with the police or Penn State Authorities","have a sexual experience you wish you hadn’t",
+        "pass out","throw up",
+        "feel sick to your stomach","get into a physical fight with someone",
+        "get into an argument with someone","have a good sexual experience",
+        "none of these"],
+      "orientation": "vertical",
+      "dependency":{
+        "question": "Q31d",
+        "show": ["0"]
+       }
+    }
+  },
+
+  {
+    "name": "Q46d",
+    "text": "What reasons did you have for deciding not to drink? (Check all that apply)",
+    "type": "checkbox",
+    "extra":{
+      "choices":["Academic, work, or other obligations","Designated driver",
+        "Health reasons","relax after a stressful situation",
+        "cope with daily life","seem more exciting to others",
+        "have a good sexual experience","look interesting to other people",
+        "none of these"],
+      "orientation": "vertical",
+      "dependency":{
+        "question": "Q31d",
+        "show": ["0"]
+       }
+    }
+  },
+
+  {
+    "name": "Q47d",
+    "text": "Where were you last night? (Check all that apply)",
+    "type": "checkbox",
+    "extra":{
+      "choices":["Home (apartment, dorm, house)","A friend’s place",
+        "Boyfriend’s/girlfriend’s/partner’s place","Party (House party, Greek/Frat/Sorority party)",
+        "Bar/Club","Restaurant",
+        "Major entertainment event (sports, tailgate, concert)",
+        "Somewhere else"],
+      "orientation": "vertical",
+      "dependency":{
+        "question": "Q31d",
+        "show": ["0"]
+       }
+    }
+  },  
+
+  {
+    "name":"Q48d",
+    "text": "Please describe where you were last night.",
+    "type": "textbox",
+    "inputType": "text",
+    "extra":{
+      "dependency":{
+        "question": "Q47d",
+        "show": "Somewhere else"
+      }
+    }
+  },
+
+  {
+    "name": "Q49d",
+    "text": "Who were you with last night? (Check all that apply)",
+    "type": "checkbox",
+    "extra":{
+      "choices":["With friends","Boyfriend/girlfriend/romantic partner",
+        "Large group","Sibling(s)",
+        "Parent(s)","Alone",
+        "someone else"],
+      "orientation": "vertical",
+      "dependency":{
+        "question": "Q31d",
+        "show": ["0"]
+       }
+    }
+  },  
+
+  {
+    "name":"Q50d",
+    "text":"Were any of these people drinking last night?",
+    "type":"radiobutton",
+    "extra":{
+      "choices":["Yes", "No"],
+      "orientation": "vertical",
+      "dependency":{
+        "question": "Q49d",
+        "hide": ["Alone"]
+      }
+    }
+  },
+
+  {
+    "name":"Q51d",
+    "text":"Were any of these people drinking too much last night?",
+    "type":"radiobutton",
+    "extra":{
+      "choices":["Yes", "No"],
+      "orientation": "vertical",
+      "dependency":{
+        "question": "Q49d",
+        "hide": ["Alone"]
+      }
+    }
+  },
+
+  {
+    "name":"Q52d",
+    "text":"Did you smoke any cigarettes last night, even one or two puffs?",
+    "type":"radiobutton",
+    "extra":{
+      "choices":["Yes", "No"],
+      "orientation": "vertical"
+    }
+  },
+
+  {
+    "name": "Q53d",
+    "text": "Yesterday, about how many cigarettes did you smoke?",
+    "type": "radiobutton",
+    "extra":{
+      "choices":["1 or more puffs, but never a whole cigarette","1 cigarette",
+        "2 to 5 cigarettes","6 to 15 cigarettes (about ½ pack total)",
+        "16 to 25 cigarettes (about 1 pack total)","More than one pack"],
+      "orientation": "vertical",
+      "dependency":{
+        "question": "Q52d",
+        "show": "Yes",
+        "hide": "No"
+      }
+    }
+  },
+
+  {
+    "name":"Q54d",
+    "text":"Were you around other people who were smoking cigarettes last night?",
+    "type":"radiobutton",
+    "extra":{
+      "choices":["Yes", "No"],
+      "orientation": "vertical"
+    }
+  },
+
+   {
+    "name":"Q55d",
+    "text":"Did you use electronic cigarettes last night?",
+    "type":"radiobutton",
+    "extra":{
+      "choices":["Yes", "No"],
+      "orientation": "vertical"
+    }
+  }, 
+
+  {
+    "name":"Q56d",
+    "text":"Did you use marijuana last night?",
+    "type":"radiobutton",
+    "extra":{
+      "choices":["Yes", "No"],
+      "orientation": "vertical"
+    }
+  }, 
+
+  {
+    "name":"Q57d",
+    "text":"Did you take amphetamines (e.g., Ritalin, Adderall, Methamphetamine) last night that were not prescribed for you?",
+    "type":"radiobutton",
+    "extra":{
+      "choices":["Yes", "No"],
+      "orientation": "vertical"
+    }
+  }, 
+
+  {
+    "name":"Q58d",
+    "text":"Did you take opioids (e.g., hydrocodone, oxycodone, fentanyl) last night that were not prescribed for you?",
+    "type":"radiobutton",
+    "extra":{
+      "choices":["Yes", "No"],
+      "orientation": "vertical"
+    }
+  }, 
+
+  {
+    "name":"Q59d",
+    "text":"Do you intend to drink today/tonight?",
+    "type":"radiobutton",
+    "extra":{
+      "choices":["Yes", "No"],
+      "orientation": "vertical"
+    }
+  }, 
+
+  {
+    "name": "Q60d",
+    "text": "Today/tonight, do you intend to drink more than, less than, or about the same as usual?",
+    "type": "radiobutton",
+    "extra":{
+      "choices":["More","About the same","Less"],
+      "orientation": "vertical",
+      "dependency":{
+        "question": "Q59d",
+        "show": "Yes",
+        "hide": "No"
+      }
+    }
+  },
+
+  {
+    "name":"Q61d",
+    "text":"Do you plan to get drunk?",
+    "type":"radiobutton",
+    "extra":{
+      "choices":["Yes", "No"],
+      "orientation": "vertical"
+    }
+  }
+
+
+]
